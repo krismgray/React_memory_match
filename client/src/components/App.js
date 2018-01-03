@@ -15,13 +15,10 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <Flash />
-        <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route component={NoMatch} />
           </Switch>
-        </FetchUser>
       </div>
     );
   }
